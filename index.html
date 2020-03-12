@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entry</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"> </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-tab">
+            <div class="left-tab-content">
+                <p>
+                    <span style="font-size: 72px">Quick Add</span><br>
+                    <span style="font-size: 18px;">Quickly add name value pairs and manipulate<br>
+                    them and convert them to XML</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="right-tab">
+            <div class="card">
+                <div class="card-row-1">
+                    <input id="card-row-1-input" class="card-row-1-input" type="text" placeholder="Name=Value"/>
+                    <button class="card-row-1-button-add" onclick="addObject()">ADD</button>
+                </div>
+
+                <div class="card-row-2">
+                    <button class="card-row-2-button-sortName" onclick="sort('name')">SORT BY NAME</button>  
+                    <button class="card-row-2-button-sortValue" onclick="sort('value')">SORT BY VALUE</button>
+                    <button class="card-row-2-button-delete" onclick="deleteArray()">DELETE</button>
+                    <button class="card-row-2-button-xml" onclick="toXml()">XML</button>
+                </div>
+
+                <div class="card-row-3">
+                    <textarea id="card-row-3-textArea" class="card-row-3-textArea">
+
+                    </textarea>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
