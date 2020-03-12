@@ -4,16 +4,18 @@ body{
     margin:0px;
     font-family: "Roboto";
     background-color: #F9F9F9;
+    font-size: 12px;
 }
 .container{
     display:grid;
+    grid-template-areas: 'left-tab right-tab ';
     grid-template-columns: auto auto;
     height:100vh;
     width:100%;
-    
 }
 
 .left-tab{
+    grid-area: left-tab;
     height:100%;
     width:100%;
     display: flex;
@@ -26,6 +28,7 @@ body{
 /*--------------------------------------------------------------------------------------------*/
 
 .right-tab{
+    grid-area: right-tab;
     height:100%;
     width:100%;
     display: flex;
@@ -58,7 +61,7 @@ body{
     border:0px;
     width:60%;
     margin:2%;
-    font-size: 14px;
+    font-size: 1em;
     padding-left:1%;
 }
 
@@ -68,6 +71,7 @@ body{
     height: 40%;
     border:0px;
     width:20%;
+    font-size: 0.8em;
 }
 
 .card-row-2{
@@ -89,6 +93,7 @@ body{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25), -1px -1px 10px rgba(105, 226, 153, 0.7);
     margin-right:2%;
     margin-left:3%;
+    font-size: 0.8em;
 }
 
 .card-row-2-button-sortValue{
@@ -98,6 +103,7 @@ body{
     background: rgb(118, 158, 219);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25), -1px -1px 10px rgba(105, 153, 226, 0.7);
     margin-right:2%;
+    font-size: 0.8em;
 }
 
 .card-row-2-button-delete{
@@ -107,6 +113,7 @@ body{
     background: #E26970;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25), -1px -1px 10px rgba(226, 105, 112, 0.7);
     margin-right:2%;
+    font-size: 0.8em;
 }
 
 .card-row-2-button-xml{
@@ -115,6 +122,7 @@ body{
     width:13%;
     background: #E29469;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25), -1px -1px 10px rgba(226, 148, 105, 0.7);
+    font-size: 0.8em;
 }
 
 .card-row-3{
@@ -131,7 +139,41 @@ body{
     width:70%;
     background: #E9E9E9;
     border:0px;
-    font-size: 14px;
+    font-size: 0.9em;
     height:100%;
     resize: none;
 }
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+    body{
+        font-size: 8px;
+    }
+    .container{
+        display:grid;
+        grid-template-areas: 'left-tab left-tab' 'right-tab right-tab';
+        grid-template-rows: 100% 100%;
+        height:100vh;
+        width:100%;
+    }
+    .left-tab{
+        background-color: red;
+    }
+    .right-tab{
+        background-color: green;
+    }
+} 
+@media screen and (min-width:800px) and (max-width: 1000px) {
+    body{
+        font-size: 9px;
+    }
+} 
+
+@media only screen and (min-width: 1080px) {
+  body{
+      font-size: 12px;
+  }
+} 
+ 
