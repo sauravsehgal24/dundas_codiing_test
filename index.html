@@ -10,7 +10,9 @@
     <script src="index.js"> </script>
 </head>
 <body>
+    <!--GRID-->
     <div class="container">
+        <!--LEFT GRID ITEM-->
         <div class="left-tab">
             <div class="left-tab-content">
                 <p>
@@ -20,33 +22,33 @@
                 </p>
             </div>
         </div>
+        <!--LEFT GRID ITEM-->
 
+        <!--RIGHT GRID ITEM-->
         <div class="right-tab">
+            <!--CARD-->
             <div class="card">
                 <div class="card-row-1">
                     <input id="card-row-1-input" class="card-row-1-input" type="text" placeholder="Name=Value"/>
                     <button class="card-row-1-button-add" onclick="addObject()">ADD</button>
                 </div>
-
                 <div class="card-row-2">
                     <button class="card-row-2-button-sortName" onclick="sort('name')">SORT BY NAME</button>  
                     <button class="card-row-2-button-sortValue" onclick="sort('value')">SORT BY VALUE</button>
                     <button class="card-row-2-button-delete" onclick="deleteArray()">DELETE</button>
                     <button class="card-row-2-button-xml" onclick="toXml()">XML</button>
                 </div>
-
                 <div class="card-row-3">
                     <textarea id="card-row-3-textArea" class="card-row-3-textArea">
-
                     </textarea>
                 </div>
-
             </div>
+            <!--CARD-->
+
         </div>
-
-
-
-
+        <!--RIGHT GRID ITEM-->
+        
     </div>
+    <!--GRID-->
 </body>
 </html>
